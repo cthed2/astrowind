@@ -136,16 +136,18 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     >
       <div class="items-center flex justify-between w-full md:w-auto">
         <div class="flex">
-          {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />}
+          {showToggleTheme && <ToggleTheme iconClass="w-7 h-7 md:w-7 md:h-7 md:inline-block" />}
           {
             showRssFeed && (
               <a
                 class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                 aria-label="WhatsApp"
-                href={getAsset('/rss.xml')}
+                href="https://wa.me/51973811100?text=Hola%20quiero%20un%20servicio%20personalizado"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Icon name="tabler:brand-whatsapp" class="w-7 h-7" />
-                <span class="ml-2">+51 941893112</span> 
+                <span class="ml-2">+51 973811100</span> 
               </a>
             )
           }
